@@ -31,7 +31,7 @@ namespace VariantB
         public void Cooling()
         {
             if (!OverheatProtection)
-                Console.WriteLine("Cooling if temperature is above 40");
+                Console.WriteLine("Cooling");
         }
     }
 }

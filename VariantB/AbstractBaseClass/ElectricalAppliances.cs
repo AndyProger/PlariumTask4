@@ -5,7 +5,7 @@ namespace VariantB
 {
     interface ICool
     {
-        // охлаждение могут реализовывать не только электроприборы
+        // охлаждение
         public void Cooling();
     }
 
