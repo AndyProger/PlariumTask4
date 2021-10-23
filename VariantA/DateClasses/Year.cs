@@ -17,6 +17,5 @@ namespace VariantA
             Year otherYear = obj as Year;
             return otherYear is not null ? otherYear.Year_ == Year_ : false;
         }
-
     }
 }

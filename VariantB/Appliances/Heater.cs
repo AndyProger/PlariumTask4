@@ -2,7 +2,7 @@
 
 namespace VariantB
 {
-    class Heater : ElectricalAppliances
+    class Heater : ElectricalAppliances, ICool
     {
         public int HeatingArea { get; private set; }
         public bool OverheatProtection { get; private set; }
@@ -26,6 +26,12 @@ namespace VariantB
             base.StartWorking();
 
             Console.WriteLine("Warming up!");
+        }
+
+        public void Cooling()
+        {
+            if (!OverheatProtection)
+                Console.WriteLine("Cooling if temperature is above 40");
         }
     }
 }

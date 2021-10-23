@@ -3,6 +3,12 @@ using System.Collections.Generic;
 
 namespace VariantB
 {
+    interface ICool
+    {
+        // охлаждение могут реализовывать не только электроприборы
+        public void Cooling();
+    }
+
     enum EnergySource
     {
         Rosette,
